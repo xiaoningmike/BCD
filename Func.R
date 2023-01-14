@@ -59,11 +59,11 @@ BCD = function(x, group, lambda1 = NULL, lambda2 = NULL)
 {
 	if(is.null(lambda1))
 	{
-		lambda1 = c(0.02, 0.05, 0.09, 0.125, 0.2, 0.3, 0.5)
+		lambda1 = c(0.05, 0.125, 0.2, 0.3, 0.5)
 	}
 	if(is.null(lambda2))
 	{
-		lambda2 = seq(0.2, 2, length.out = 7)	
+		lambda2 = seq(0.3, 1.7, length.out = 6)
 	}
 	n = nrow(x)
 	p = ncol(x)
